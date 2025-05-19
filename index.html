@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/all.min.js"></script>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header><img src="src/img/pseudo_en_fond_vide (1).png" alt=""></header>
+
+  <!-- <div class="row tab">
+    <div id="btnTwitch" class="tab-choice tab-choice-twitch active">Stream</div>
+    <div id="btnYoutube" class="tab-choice tab-choice-youtube">Vidéos</div>
+  </div> -->
+
+  <div class="slider">
+    <div id="sliderTwitch" class="slider-case twitch active">
+      <span class="status">
+        <div id="dgad2" class="circle"></div>
+        <span id="dgad">Hors-ligne</span>
+      </span>
+      <div class="live-video">
+        <a href="https://www.twitch.tv/akaruu" target="_blank" class="row-img">
+          <img src="src/img/offline.png">
+        </a>
+        <div class="live-video_btn"><i class="fab fa-twitch"></i>Regarder</div>
+      </div>
+
+      <p class="title"></p>
+
+      <div class="social">
+        <a href="https://twitter.com/AkaruuxD" class="href" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/c/AkaruuxD" class="href" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="http://discord.akaruu.tv/" class="href" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://www.twitch.tv/akaruu" class="href" target="_blank"><i class="fab fa-twitch"></i></a>
+        <a href="https://www.instagram.com/akaruuxd/" class="href" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Akaruu-124955504335738/" class="href" target="_blank"><i
+            class="fab fa-facebook"></i></a>
+        <a href="https://steamcommunity.com/groups/LOSBOTOSHERMANOS" class="href" target="_blank"><i
+            class="fab fa-steam"></i></a>
+      </div>
+    </div>
+
+    <div id="sliderYoutube" class="slider-case youtube">
+      <div class="recentVideo">
+        <span class="status">Dernières Vidéos</span>
+        <div class="recentVideo_thumbnail">
+          <a href="*" target="_blank">
+            <img id="recentVideo_img" src="*">
+            <div id="recentVideo_btn"><i class="fab fa-youtube"></i>Regarder</div>
+          </a>
+          <div id="recentVideo_time"></div>
+        </div>
+        <p id="recentVideo_title"></p>
+      </div>
+
+      <div class="videos"></div>
+    </div>
+  </div>
+
+  <script src="js/popup.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>

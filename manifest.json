@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Akaruu",
+  "version": "4.2.1",
+  "description": "Recevez les notifications Twitch & YouTube d'Akaruu pour être informé des nouvelles vidéos et streams !",
+  "author": "Killian_Thvn and update by lagent_titi",
+  "action": {
+    "default_icon": "src/img/icon_off.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "notifications",
+    "alarms",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://api.twitch.tv/*",
+    "https://twitch.tv/*",
+    "https://www.googleapis.com/*",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/popup.js"]
+    }
+  ],
+  "icons": {
+    "32": "src/img/32.png",
+    "64": "src/img/64.png",
+    "128": "src/img/128.png"
+  },
+  "update_url": "https://clients2.google.com/service/update2/crx"
+}
