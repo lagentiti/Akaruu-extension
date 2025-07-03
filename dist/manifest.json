@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Akaruu Extension",
+  "version": "1.0",
+  "description": "Akaruu Extension for Chrome/Firefox",
+  "permissions": [
+    "notifications",
+    "alarms",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "imgs/32.png",
+      "32": "imgs/32.png",
+      "48": "imgs/64.png",
+      "128": "imgs/128.png"
+    }
+  },
+  "icons": {
+    "16": "imgs/32.png",
+    "32": "imgs/32.png",
+    "48": "imgs/64.png",
+    "128": "imgs/128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "imgs/icon_on.png",
+        "imgs/icon_off.png",
+        "imgs/twitch.png",
+        "imgs/online.gif",
+        "imgs/offline.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "akaruu-extension",
+  "version": "1.0.0",
+  "description": "Extension Chrome/Firefox en TypeScript",
+  "scripts": {
+    "build": "tsc && cpy 'src/**/*.{html,css,png,json,otf}' dist --parents",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "cpy-cli": "^5.0.0",
+    "typescript": "^5.8.3"
+  }
+}
